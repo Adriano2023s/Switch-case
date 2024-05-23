@@ -25,6 +25,9 @@ namespace Métodos
                         case 2:
                         Coordenada();
                         break;
+                        case 3:
+                        VerificadorDeIntervalo();
+                        break;
                 }
             }
         }
@@ -81,6 +84,32 @@ public static void Coordenada()
                     break;
                 }
             }
+        }
+
+        public static void VerificadorDeIntervalo()
+        {
+            Console.WriteLine("Atividade 3:");
+
+            int n1;
+            int n2;
+
+            Console.WriteLine("Digite um número para fazer a verificação \n");
+            n1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite outro número para fazer a verificação \n");
+            n2 = int.Parse(Console.ReadLine());
+
+            for (int i = n1; i < n2; i++)
+            {
+                if (i >= 10 && i <= 20)
+                {
+                    Console.WriteLine($"In, dentro: {i}");
+                }
+                else
+                {
+                    Console.WriteLine($"Olt, fora: {i}");
+                }
+                            }
         }
 
     }

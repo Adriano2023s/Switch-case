@@ -11,3 +11,4 @@ C:\Users\Home\OneDrive\Área de Trabalho\Nova pastaRepositórios\Métodos\Métod
 C:\Users\Home\OneDrive\Área de Trabalho\Nova pastaRepositórios\Métodos\Métodos\obj\Debug\netcoreapp3.1\Métodos.dll
 C:\Users\Home\OneDrive\Área de Trabalho\Nova pastaRepositórios\Métodos\Métodos\obj\Debug\netcoreapp3.1\Métodos.pdb
 C:\Users\Home\OneDrive\Área de Trabalho\Nova pastaRepositórios\Métodos\Métodos\obj\Debug\netcoreapp3.1\Métodos.genruntimeconfig.cache
+C:\Users\Home\OneDrive\Área de Trabalho\Nova pastaRepositórios\Métodos\Métodos\obj\Debug\netcoreapp3.1\Métodos.sourcelink.json
