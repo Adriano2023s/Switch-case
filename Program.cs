@@ -15,6 +15,7 @@ namespace Métodos
                 Console.WriteLine("Opção 1: Atividade verificador de números impares e pares.");
                 Console.WriteLine("Opção 2: Atividade coordenadas");
                 Console.WriteLine("opção 3: Atividade intervalos de números.");
+                Console.WriteLine("Opção 4: Programa que verifica a quantidade de abastecimentos em um posto.");
                 int menu = int.Parse(Console.ReadLine());
 
                 switch (menu)
@@ -27,6 +28,9 @@ namespace Métodos
                         break;
                         case 3:
                         VerificadorDeIntervalo();
+                        break;
+                        case 4:
+                        ProgramaPosto();
                         break;
                 }
             }
@@ -110,6 +114,52 @@ public static void Coordenada()
                     Console.WriteLine($"Olt, fora: {i}");
                 }
                             }
+        }
+
+        public static void ProgramaPosto()
+        {
+            Console.WriteLine("Atividade 4:");
+
+            int tipoCombustivel = 0;
+            int[] contagemCombustivel = new int[4];
+
+            while (tipoCombustivel <= 4)
+            {
+                Console.WriteLine("Escolha um tipo de combustível \n");
+                Console.WriteLine("Opção 1: Gasolina;");
+                Console .WriteLine("Opção 2: Diesel;");
+                Console.WriteLine("Opção 3: Alcool;");
+                Console.WriteLine("Opção 4: GNV;");
+                Console.WriteLine("Opção 5: Sair;");
+                tipoCombustivel = int.Parse(Console.ReadLine());
+
+                switch (tipoCombustivel)
+                {
+                    case 1:
+                        contagemCombustivel[0]++;
+                        Console.WriteLine($"O combustível escolhido foi: Gasolina; A quantidade foi: {contagemCombustivel[0]}");
+                        break;
+
+                        case 2:
+                        contagemCombustivel[1]++;
+                        Console.WriteLine($"O combustível escolhido foi: Diesel; E a quantidade foi: {contagemCombustivel[1]}");
+                        break ;
+
+                    case 3:
+                        contagemCombustivel[2]++;
+                        Console.WriteLine($"O combustível escolhido foi: Alcool; E a quantidade foi: {contagemCombustivel[2]}");
+                        break;
+
+                        case 4:
+                        contagemCombustivel[3]++;
+                        Console.WriteLine($"O combustível escolhido foi: GNV; E a quantidade foi: {contagemCombustivel[3]}");
+                        break;
+
+                        case 5:
+                        Console.WriteLine("Obrigado pela sua preferência!");
+                        break;
+                }
+            }
         }
 
     }
